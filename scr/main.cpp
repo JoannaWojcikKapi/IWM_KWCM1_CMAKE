@@ -4,13 +4,13 @@
 #else
 #include <cmath>
 #endif
-int main()
-{ 
-
+#include <iostream>
+int main(int degree)
+{
 #ifdef USE_TRIGONOMETRY_DEGREE
-double degree = 34;
-double result = degreemath::cos_degree(degree);
+double results = degreemath ::cos_degree(degree);
 double result1 = degreemath::sin_degree(degree);
+std::cout << result1;
 double result2 = degreemath::tg_degree(degree);
 double result3 = degreemath::ctg_degree(degree);
 #else
